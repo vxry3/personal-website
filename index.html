@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Hi, I'm <span class="name">Byron</span></h1>
+            <p class="tagline">Web tinkerer · Music lover · Coder</p>
+        </header>
+
+        <main>
+            <section class="about">
+                <h2>About Me</h2>
+                <p>Hello! I'm a developer who builds fun, small projects, loves music, and experiments with design.</p>
+            </section>
+
+            <section class="links">
+                <h2>Find me</h2>
+                <div class="cards">
+                    <div class="card" id="discord-card">
+                        <h3>Discord</h3>
+                        <div class="discord-row">
+                            <img id="discord-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="avatar" width="64" height="64">
+                            <div class="discord-info">
+                                <p id="discord-name">YourName#1234</p>
+                                <p id="discord-status" class="muted">offline</p>
+                                <div id="discord-activity" class="activity muted small" aria-live="polite">
+                                    <img id="activity-icon" src="" alt="activity" width="40" height="40" style="display:none;border-radius:6px;">
+                                    <div class="activity-text">
+                                        <div id="activity-title" class="activity-title"></div>
+                                        <div id="activity-details" class="activity-details small muted"></div>
+                                        <div id="activity-workspace" class="activity-workspace small muted"></div>
+                                    </div>
+                                    <div id="activity-timer" class="activity-timer small muted"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button id="copy-discord" class="btn">Copy</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>GitHub</h3>
+                        <p><a id="github-link" href="https://github.com/vxry3" target="_blank" rel="noopener">github.com/vxry3</a></p>
+                    </div>
+
+                    <div class="card" id="spotify-card">
+                        <h3>Spotify</h3>
+                        <div class="spotify-row">
+                            <img id="spotify-art" src="" alt="album art" width="64" height="64">
+                            <div class="spotify-info">
+                                <p id="spotify-title">Not listening</p>
+                                <p id="spotify-artist" class="muted small"></p>
+                                <div id="spotify-progress" class="progress" aria-hidden="true">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <a id="spotify-open" class="btn" href="https://open.spotify.com/" target="_blank" rel="noopener">Open on Spotify</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>Made with green vibes ✨</footer>
+    </div>
+
+    <div id="toast" class="toast" aria-hidden="true"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
